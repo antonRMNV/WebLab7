@@ -1,0 +1,34 @@
+﻿@{
+    ViewData["Title"] = "Download file";
+}
+<html>
+<head>
+    <title>
+        @ViewData["Title"]
+    </title>
+</head>
+<body>
+    <div class="text-center">
+        <div class="display-3">
+            Specify file properties
+        </div>
+        <form method="post" style="margin:auto; width:50%">
+            <div class="form-group">
+                <label>Enter your name</label>
+                <input class="form-control" type="text" name="name" />
+            </div>
+            <div class="form-group">
+                <label>Enter your last name</label>
+                <input class="form-control" type="text" name="surname" />
+                <small class="form-text text-muted">We don't share your personal data with anyone</small>
+            </div>
+            <div class="form-group">
+                <label>Enter filename</label>
+                <input class="form-control" type="text" name="filename" />
+                <small class="form-text text-muted">This file will contain data about you</small>
+            </div>
+            <button type="submit" class="btn btn-primary">Continue</button>
+        </form>
+    </div>
+</body>
+</html>
